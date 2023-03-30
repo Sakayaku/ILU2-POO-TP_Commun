@@ -7,12 +7,12 @@ import org.junit.jupiter.api.Test;
 
 class RestaurantTest {
 	FormulaireRestaurant formulaire;
-	Restaurant restaurant;
+	Reservation restaurant;
 	static final String MESSAGE_RESA = "Le 10/12\nTable 3 pour le premier service.";
 
 	@BeforeEach
 	void setUp() {
-		restaurant = new Restaurant();
+		restaurant = new Reservation();
 		restaurant.ajouterTable(2);
 		restaurant.ajouterTable(3);
 		restaurant.ajouterTable(4);
