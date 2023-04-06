@@ -6,6 +6,8 @@ public class FormulaireRestaurant extends Formulaire{
 	private int identificationEntite;
 	public FormulaireRestaurant(int jour, int mois, int nombrePersonnes, int numService) {
 		super(jour,mois);
+		this.nombrePersonnes=nombrePersonnes;
+		this.numService=numService;
 	}
 	public int getNombrePersonnes() {
 		return nombrePersonnes;
@@ -24,12 +26,6 @@ public class FormulaireRestaurant extends Formulaire{
 	}
 	public void setIdentificationEntite(int identificationEntite) {
 		this.identificationEntite = identificationEntite;
-	}
-	public int getJour() {
-		return this.jour;
-	}
-	public int getMois() {
-		return this.mois;
 	}
 	
 }

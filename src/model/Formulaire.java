@@ -1,6 +1,6 @@
 package model;
 
-public class Formulaire {
+public abstract class Formulaire {
 	protected int mois;
 	protected int jour;
 	protected int numeroEntite;
@@ -8,4 +8,17 @@ public class Formulaire {
 		this.jour=jour;
 		this.mois=mois;
 	}
+	public int getJour() {
+		return this.jour;
+	}
+	public int getMois() {
+		return this.mois;
+	}
+	public int getNumeroEntite() {
+		return numeroEntite;
+	}
+	public void setNumeroEntite(int numeroEntite) {
+		this.numeroEntite = numeroEntite;
+	}
+	
 }

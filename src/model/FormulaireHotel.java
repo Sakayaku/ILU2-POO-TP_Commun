@@ -7,6 +7,9 @@ public class FormulaireHotel extends Formulaire {
 	private int numChambre;
 	public FormulaireHotel(int jour, int mois, int numLSimple, int numLDouble, int numChambre) {
 		super(jour,mois);
+		this.numLSimple=numLSimple;
+		this.numLDouble=numLDouble;
+		this.numChambre=numChambre;
 	}
 	public int getNumEntite() {
 		return numEntite;
