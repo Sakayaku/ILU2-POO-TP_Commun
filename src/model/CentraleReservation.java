@@ -17,7 +17,7 @@ public class CentraleReservation <E extends EntiteReservable<F>, F extends Formu
 		return nombreEntite;
 	}
 	public int[] donnerPossibilites(F formulaire) {
-		int resultat[]=new int[nombreEntite]; 
+		int[] resultat=new int[nombreEntite]; 
 		for (int i=0;i<tableauEntite.length;i++) {
 			if (tableauEntite[i].compatible(formulaire)) {
 				resultat[i]=tableauEntite[i].getNumero();
